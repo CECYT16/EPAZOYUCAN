@@ -25,6 +25,13 @@
 .center {
   text-align: center;
 }
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+
 
 .dcenter {
   border: 5px solid;
@@ -55,22 +62,27 @@ ul[title]::before {
   font-size: 2em;
 }
 
+.objetivo {
+  padding: 4px;
+  font-size: 2em;
+} 
+
+
 .nav-container {
   position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 20px;
+  left: 50%; /* Set left position to 50% */
+  transform: translateX(-50%); /* Translate it back by half of its own width */
   width: auto;
-  max-width: 80%; /* Set a maximum width for the container */
-  background-color: #fcf4c1; /* Apply background color from the theme */
+  max-width: 80%;
+  background-color: #fcf4c1;
   padding: 10px;
   border-radius: 10px;
-  border: 0px solid #726439; /* Add a slight border */
+  border: 0px solid #726439;
   display: flex;
   justify-content: center;
-  gap: 10px; /* Add a slight separation between links */
+  gap: 10px;
 }
-
 
 .nav-container a {
   padding: 10px 20px;
@@ -92,44 +104,19 @@ ul[title]::before {
   opacity: 1;
 }
 
-/*Made by Jossef Boureaw*/
-/* Adjustments for mobile devices */
-/* Media query for screens up to 768px (typical tablet size) */
-@media only screen and (max-width: 768px) {
-  .title {
-    font-size: 3em; /* Reduce title font size */
-  }
-  .subtitle {
-    font-size: 1.5em; /* Reduce subtitle font size */
-  }
-  .dcenter {
-    width: 80%; /* Adjust width of center container */
-  }
-  .nav-container {
-    max-width: 90%; /* Adjust maximum width for navigation container */
-    bottom: 10px; /* Add some space from the bottom */
-  }
-  .nav-container a {
-    margin: 0 5px; /* Add margin to create separation between buttons */
-  }
+.objective {
+  float: right; /* Float to the right side */
+  width: 45%; /* Set width */
+  margin-top: 20px; /* Add top margin */
+  text-align: right; /* Align text to the right */
 }
-
-/* Media query for screens up to 480px (typical smartphone size) */
-@media only screen and (max-width: 480px) {
-  .title {
-    font-size: 2em; /* Further reduce title font size */
-  }
-  .subtitle {
-    font-size: 1.2em; /* Further reduce subtitle font size */
-  }
-  .dcenter {
-    width: 90%; /* Adjust width of center container */
-  }
-  .nav-container {
-    max-width: 100%; /* Adjust maximum width for navigation container */
-  }
-  .nav-container a {
-    margin: 5px 0; /* Add margin to create separation between buttons */
-    display: block; /* Display buttons as block elements for full width */
-  }
+.objective h2 {
+  font-size: 2em; /* Adjust heading size */
+  text-align: right; /* Align heading to the right */
+}
+.objective p {
+  font-size: 1em; /* Adjust paragraph font size */
+  line-height: 1.5; /* Adjust line height */
+  margin-bottom: 15px; /* Add bottom margin */
+  text-align: justify; /* Justify paragraph text */
 }
