@@ -104,19 +104,20 @@ ul[title]::before {
   opacity: 1;
 }
 
-.objective {
-  float: right; /* Float to the right side */
-  width: 45%; /* Set width */
-  margin-top: 20px; /* Add top margin */
-  text-align: right; /* Align text to the right */
+/* Close button styling */
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px; /* Adjusted padding */
+  font-size: 0.8em; /* Reduced font size */
+  color: #726439;
+  text-decoration: none;
+  transition: transform 0.3s;
 }
-.objective h2 {
-  font-size: 2em; /* Adjust heading size */
-  text-align: right; /* Align heading to the right */
+
+.close-btn:hover {
+  transform: scale(1.2);
 }
-.objective p {
-  font-size: 1em; /* Adjust paragraph font size */
-  line-height: 1.5; /* Adjust line height */
-  margin-bottom: 15px; /* Add bottom margin */
-  text-align: justify; /* Justify paragraph text */
-}
+
+
