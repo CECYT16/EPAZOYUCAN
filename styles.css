@@ -147,3 +147,20 @@ ul[title]::before {
 .close-btn:hover {
   transform: scale(1.2);
 }
+
+.fly-away {
+  animation: flyAway 2s ease-in-out;
+}
+
+@keyframes flyAway {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(500px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}

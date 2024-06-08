@@ -6,5 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
       toggleBtn.innerHTML = navLinks.style.display === 'flex' ? '<i class="fa-solid fa-folder-minus"></i>' : '<i class="fa-solid fa-folder-plus"></i>';
     });
-  });
-  
+});
+
+const planeIcon = document.getElementById('plane-icon');
+planeIcon.addEventListener('click', () => {
+  planeIcon.classList.add('fly-away');
+  setTimeout(() => {
+    planeIcon.classList.add('fly-away');
+    planeIcon.addEventListener('animationend', () => {
+      planeIcon.remove();
+    });
+  }, 5000);
+});
