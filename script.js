@@ -12,9 +12,6 @@ const planeIcon = document.getElementById('plane-icon');
 planeIcon.addEventListener('click', () => {
   planeIcon.classList.add('fly-away');
   setTimeout(() => {
-    planeIcon.classList.add('fly-away');
-    planeIcon.addEventListener('animationend', () => {
-      planeIcon.remove();
-    });
+    planeIcon.classList.remove('fly-away');
   }, 5000);
 });
