@@ -1,4 +1,4 @@
-/*Github Update Testing*/
+/* Theme styles */
 .theme {
   color: #726439;
   background-color: #fcf4c1;
@@ -9,30 +9,32 @@
   background-color: #726439;
 }
 
+/* Font styles */
 .font-o {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  /* Update font weights for both themes */
   font-weight: 400; /* Normal weight for theme */
   font-style: normal;
 }
 
 .theme-alt .font-o {
-  /* Adjust font weight for alternative theme */
   font-weight: 700; /* Bold weight for alternative theme */
 }
 
+/* Text alignment */
 .center {
   text-align: center;
 }
+
 .left {
   text-align: left;
 }
+
 .right {
   text-align: right;
 }
 
-
+/* Container styles */
 .dcenter {
   border: 5px solid;
   margin: auto;
@@ -40,16 +42,19 @@
   padding: 10px;
 }
 
+/* Title styles */
 .title {
   margin-top: 35px;
   font-size: 5em;
   margin-bottom: 0;
 }
 
+/* Subtitle styles */
 .subtitle {
   margin-top: 0;
 }
 
+/* List styles */
 ul {
   list-style-type: none; /* Remove default bullet points */
 }
@@ -62,12 +67,13 @@ ul[title]::before {
   font-size: 2em;
 }
 
+/* Objective section styles */
 .objetivo {
   padding: 4px;
   font-size: 2em;
 } 
 
-
+/* Navigation container styles */
 .nav-container {
   position: fixed;
   bottom: 20px;
@@ -80,7 +86,7 @@ ul[title]::before {
   border-radius: 10px;
   border: 0px solid #726439;
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -92,16 +98,50 @@ ul[title]::before {
   border-radius: 5px;
   transition: transform 0.3s, opacity 0.3s;
   opacity: 1;
+  margin-right: 10px; /* Add margin between buttons */
 }
 
-.nav-container:hover a:not(:hover) {
-  transform: scale(0.9); /* Reduce the size of other links when one of them is hovered */
-  opacity: 0.5;
+.nav-container a:last-child {
+  margin-right: 0; /* Remove margin for the last button */
 }
 
-.nav-container a:hover {
+/* Toggle button styles */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #726439;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Navigation links styles */
+.nav-links {
+  display: none; /* Hidden by default */
+}
+
+.nav-links a {
+  padding: 10px 20px;
+  background-color: #726439;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 1;
+}
+
+.nav-links a:hover {
   transform: translateY(-5px);
   opacity: 1;
+}
+
+.nav-links:hover a:not(:hover) {
+  transform: scale(0.9); /* Reduce the size of other links when one of them is hovered */
+  opacity: 0.5;
 }
 
 /* Close button styling */
@@ -119,5 +159,3 @@ ul[title]::before {
 .close-btn:hover {
   transform: scale(1.2);
 }
-
-
