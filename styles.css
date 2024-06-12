@@ -6,6 +6,8 @@ body {
 
 #loading-screen {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: #fcf4c1;
@@ -13,11 +15,21 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  opacity: 1;
+  transition: opacity 1.5s ease; /* Add transition for smooth fading */
+}
+
+#loading-screen.hide {
+  opacity: 0; /* Make loading screen and its contents vanish */
+  pointer-events: none; /* Disable pointer events on loading screen */
+}
+
+#loading-screen.hide i {
+  opacity: 0; /* Also hide the spinning leaf */
 }
 
 #loading-screen i {
-  font-size: 3em; /* Adjust size as needed */
-  color: #726439; /* Adjust color as needed */
+  font-size: 5em; /* Increase the size of the spinning leaf */
 }
 
 .theme {
