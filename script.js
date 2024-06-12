@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
       const loadingScreen = document.getElementById('loading-screen');
       loadingScreen.style.display = 'none';
       document.body.style.overflow = 'auto'; // Change overflow to allow scrolling
-  }, 1000); // 3000 milliseconds = 3 seconds
+  }, 500); // 3000 milliseconds = 3 seconds
 });
 
 document.addEventListener('DOMContentLoaded', () => {
