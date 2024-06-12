@@ -53,6 +53,10 @@ body {
   font-weight: 700;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .center {
   text-align: center;
 }
@@ -86,6 +90,14 @@ body {
 
 .subtitle {
   margin-top: 0;
+}
+
+.bbody {
+  font-size: 1.25em;
+}
+
+.bbton {
+  font-size: 0.8em;
 }
 
 ul {
