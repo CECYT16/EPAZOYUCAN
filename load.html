@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen Example</title>
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .theme .loading-screen {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Ensure it is above all other content */
+        }
+        .theme .loading-icon {
+            font-size: 50px;
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body class="theme">
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <i class="fa-solid fa-leaf fa-spin loading-icon"></i>
+    </div>
+
+    <!-- Main Content of the Page -->
+    <div id="mainContent">
+        <h1>Welcome to My Page</h1>
+        <p>This is an example page with a loading screen.</p>
+    </div>
+
+    <script>
+        function showLoadingScreen() {
+            document.getElementById('loadingScreen').style.display = 'flex';
+        }
+
+        function hideLoadingScreen() {
+            document.getElementById('loadingScreen').style.display = 'none';
+        }
+
+        // Example usage: Show the loading screen on page load and hide it after 3 seconds
+        window.addEventListener('load', () => {
+            showLoadingScreen();
+            setTimeout(hideLoadingScreen, 3000); // Adjust the timeout as needed
+        });
+    </script>
+</body>
+</html>
+

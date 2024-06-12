@@ -1,3 +1,11 @@
+window.addEventListener('load', function() {
+  setTimeout(function() {
+      const loadingScreen = document.getElementById('loading-screen');
+      loadingScreen.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Change overflow to allow scrolling
+  }, 1000); // 3000 milliseconds = 3 seconds
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const toggleBtn = document.querySelector('.toggle-btn');
     const navLinks = document.querySelector('.nav-links');
