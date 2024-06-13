@@ -1,12 +1,10 @@
 window.addEventListener('load', function() {
   setTimeout(function() {
       const loadingScreen = document.getElementById('loading-screen');
-      document.body.style.overflow = 'auto'; // Change overflow to allow scrolling
-      loadingScreen.classList.add('hide'); // Add 'hide' class to the loading screen
-  }, 1000); // 3000 milliseconds = 3 seconds
+      document.body.style.overflow = 'auto';
+      loadingScreen.classList.add('hide');
+  }, 1000);
 });
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const toggleBtn = document.querySelector('.toggle-btn');
